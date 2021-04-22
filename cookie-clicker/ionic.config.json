@@ -1,0 +1,7 @@
+{
+  "name": "cookie-clicker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
