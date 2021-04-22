@@ -11,7 +11,7 @@
         <img class="w-24" [ngClass]="clickAnimate" src="/assets/svg/011-cookie.svg" (click)="click()">
       </div>
       <div class="text-center">
-        <p class="py-4 text-2xl">Users Mining</p>
+        <p class="py-4 text-2xl">{{usersOnline.length}} {{(usersOnline.length > 1) ? 'Users' : 'User'}} Mining</p>
       </div>
       <div class="flex py-4">
         <ng-container  *ngFor="let user of usersOnline">
