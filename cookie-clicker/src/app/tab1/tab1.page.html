@@ -1,17 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+
+  <div class="flex h-full">
+    <div class="m-auto">
+      <div class="text-center">
+        <p class="py-4 text-2xl font-semibold">{{cookieClicked}}</p>
+      </div>
+      <div class="flex items-center justify-center">
+        <img class="w-24" [ngClass]="clickAnimate" src="/assets/svg/011-cookie.svg" (click)="click()">
+      </div>
+      <div class="text-center">
+        <p class="py-4 text-2xl">Users Mining</p>
+      </div>
+      <div class="flex py-4">
+        <ng-container  *ngFor="let user of usersOnline">
+          <img class="w-8" src="/assets/svg/pickaxe.svg">
+        </ng-container>
+      </div>
+    </div>
+    
+  </div>
+
 </ion-content>

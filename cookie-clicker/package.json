@@ -5,11 +5,12 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host=192.168.1.2 --port=3000",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "tailwind": "npx tailwindcss build tailwind.css -o ./src/tail.css"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +22,9 @@
     "@angular/router": "~11.2.0",
     "@capacitor/core": "2.4.7",
     "@ionic/angular": "^5.5.2",
+    "ngx-socket-io": "^4.0.0",
     "rxjs": "~6.6.0",
+    "tailwindcss": "^2.1.1",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
